@@ -1,0 +1,4 @@
+-A social media ikonok közül csak a facebook működik
+-Az 5782 kézés és szak szöveg el van cssúszva a kék szalagban.
+-A "Teljeskörű segítség az európai egyetemi jelentkezés lebonyolításában" szöveg áthúzottnak látszik.
+-A rólunk mondták kártyák nem egyenlő magasak és csak egy pont van alatta (lehet,hogy direkt)

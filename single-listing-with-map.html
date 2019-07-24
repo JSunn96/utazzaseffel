@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Utazz a séffel | Éttermek</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="img/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/9760bb6d35.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+
+    <link href="css/random/allMin.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css" />
+
+
+    <link rel="stylesheet" href="custom.css">
+
+
+
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="dorne-load"></div>
+    </div>
+
+    <!-- ***** Search Form Area ***** -->
+    <div class="dorne-search-form d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-close-btn" id="closeBtn">
+                        <i class="pe-7s-close-circle" aria-hidden="true"></i>
+                    </div>
+                    <form action="#" method="get">
+                        <input type="search" name="caviarSearch" id="search"
+                            placeholder="Helyszín vagy esemény keresése">
+                        <input type="submit" class="d-none" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area" id="header">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <nav class="h-100 navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            Utazz a Séffel
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav"
+                            aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                                class="fa fa-bars"></span></button>
+                        <!-- Nav -->
+                        <div class="collapse navbar-collapse" id="dorneNav">
+                            <ul class="navbar-nav mr-auto" id="dorneMenu">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Főoldal <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gyik.html">Gy.i.k</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Kapcsolat</a>
+                                </li>
+                            </ul>
+                            <!-- Search btn -->
+                            <div class="dorne-search-btn">
+                                <a id="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i> Keresés</a>
+                            </div>
+                           
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Breadcumb Area Start ***** -->
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/hero2.jpg)">
+    </div>
+    <!-- ***** Breadcumb Area End ***** -->
+    <div class="container-fluid">
+        <!-- Explore Area -->
+        <section class="dorne-explore-area row">
+            <!-- Explore Search Area -->
+
+
+            <!-- Explore Search Form -->
+            <div class=" explore-search-form col-md-4">
+                    <h6>Milyen éttermet keresel?</h6>
+                    <!-- Tabs -->
+                    <div class="nav nav-tabs d-flex justify-content-center" id="heroTab" role="tablist">
+                        <img src="img/hero2.jpg" style="visibility:hidden;" alt="">
+                        <!--PLACEHOLDER-->
+                    </div>
+                    <!-- Tabs Content -->
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-places" role="tabpanel"
+                            aria-labelledby="nav-places-tab">
+                            <form action="#" method="get" class="d-flex-column align-items-center justify-content-center">
+    
+    
+    
+    
+                                <input type="checkbox" id="ma" name="ma" value="ma">
+                                <label for="ma">Magyaros étterem</label>
+                                <input type="checkbox" id="mo" name="mo" value="mo">
+                                <label for="mo">modern, fine dining</label>
+                                <input type="checkbox" id="st" name="st" value="st" checked="">
+                                <label for="st">Nemzetközi / Street Food</label>
+                                <input type="checkbox" id="cu" name="cu" value="cu">
+                                <label for="cu">Cukrászda</label>
+    
+                                <h3>Megye</h3>
+                                <select class="custom-select">
+                                    <option selected="">Elhelyezkedés</option>
+                                    <option value="1">Bács-Kiskun megye</option>
+                                    <option value="2">Baranya megye</option>
+                                    <option value="3">Békés megye</option>
+                                    <option value="1">Borsod-Abaúj-Zemplén megye</option>
+                                    <option value="2">Budapest</option>
+                                    <option value="3">Csongrád megye</option>
+                                    <option value="1">Fejér megye</option>
+                                    <option value="2">Győr-Moson-Sopron megye</option>
+                                    <option value="3">Hajdú-Bihar megye</option>
+                                    <option value="1">Heves megye</option>
+                                    <option value="2">Jász-Nagykun-Szolnok megye</option>
+                                    <option value="3">Komárom-Esztergom megye</option>
+                                    <option value="1">Nógrád megye</option>
+                                    <option value="2">Pest megye</option>
+                                    <option value="3">Somogy megye</option>
+                                    <option value="1">Szabolcs-Szatmár-Bereg megye</option>
+                                    <option value="2">Tolna megye</option>
+                                    <option value="3">Vas megye</option>
+                                    <option value="1">Veszprém megye</option>
+                                    <option value="2">Zala megye</option>
+                                </select>
+                                <h3>Összbenyomás</h3>
+                                <select class="custom-select">
+                                    <option>Válasszon értékelést</option>
+                                    <option value="1">10/1</option>
+                                    <option value="2">10/2</option>
+                                    <option value="3">10/3</option>
+                                    <option value="4">10/4</option>
+                                    <option value="5">10/5</option>
+                                    <option value="6">10/6</option>
+                                    <option value="7">10/7</option>
+                                    <option value="8">10/8</option>
+                                    <option value="9">10/9</option>
+                                    <option value="10">10/10</option>
+    
+                                </select>
+    
+    
+                                <div class="row mt-md-5 mt-0">
+                                    <div class="col-12  d-flex justify-content-center">
+                                        <button type="submit" class="btn dorne-btn   bg-white text-dark"><i
+                                                class="fa fa-search pr-2" aria-hidden="true"></i> Keresés</button>
+                                    </div>
+    
+    
+    
+    
+    
+                                </div>
+    
+    
+                            </form>
+    
+    
+                            <div style="margin-top:2em;" class="nav nav-tabs d-flex justify-content-center" id="heroTab"
+                                role="tablist">
+                                <img src="https://via.placeholder.com/150/0000FF/808080 ?Text=Digital.com
+                
+                                    C/O https://placeholder.com/" style="visibility:hidden;  height: 20em;" alt="">
+                                <!--PLACEHOLDER-->
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col px-0 px-sm-4 py-3 col-8">
+                <!--NAGY FEHÉR OSZLOP ELEJE-->
+
+                <sec class="dorne-single-listing-area section-padding-100">
+                    <!-- ***** Single Listing Area Start ***** -->
+                    <div class="container-fluid">
+                        <div class="row-12">
+                            <!-- Single Listing Content -->
+                            <div class="col-12 px-6">
+                                <div class="slider-container">
+                                    <div class="single-listing-content">
+                                        <div><img src="img/hero2.jpg" alt="" class="img-fluid"></div>
+                                        <div><img src="img/hero.jpg" alt="" class="img-fluid"></div>
+                                    </div>
+                                </div>
+
+                                <div class="listing-title">
+                                    <h4>Bors Étterem | Budapest </h4>
+                                    <h6>Street food</h6>
+                                </div>
+
+                                <div class="single-listing-nav">
+                                    <nav>
+                                        <ul id="listingNav">
+                                            <li class="active"><a href="#overview">Leírás</a></li>
+                                            <li><a href="#menu">Étlap</a></li>
+                                            <li><a href="#review">Értékelés</a></li>
+                                            <li><a href="#lomap">Elhelyezkedés</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <div class="overview-content mt-50 container" id="overview">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 px-3">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nibh
+                                                sed mi
+                                                ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet
+                                                vestibulum. Proin
+                                                tempus lacus porta lorem blandit aliquam eget quis ipsum. Vivamus
+                                                accumsan
+                                                consequat ligula non volutpat. Sed mollis orci non cursus
+                                                vestibulum.
+                                                Pellentesque vitae est a augue laoreet venenatis sed eu felis. Sed
+                                                cursus magna
+                                                nec turpis ullamcorper, eget rutrum felis egestas. Nunc odio ex,
+                                                fermentum
+                                                efficitur nunc vitae, efficitur hendrerit diam. Lorem ipsum dolor
+                                                sit amet,
+                                                consectetur adipiscing elit. Nam ac nibh sed mi ullamcorper rhoncus.
+                                                Curabitur
+                                                pulvinar vel augue sit amet vestibulum. Proin tempus lacus porta
+                                                lorem blandit
+                                                aliquam eget quis ipsum.</p>
+
+                                        </div>
+
+                                        <div class="col-12 col-lg-6 px-3 checkboxcol">
+                                            <div class="kartyaszoveg"><h6>Összélmény <span>9p</span></h6>
+                                                <p>Étel 7p | </p>
+                                                <p>Felszolgálás 8p | </p>
+                                                <p>Étterem 9p</p></div>    
+                                            
+
+                                            <div class="row checkboxrow">
+                                                
+                                                <div class="col-6">
+                                                    <label class="custom-control custom-checkbox mb-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Bankkártyás
+                                                            fizetés</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="custom-control custom-checkbox mb-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Kerékpár
+                                                            parkolás</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="custom-control custom-checkbox mb-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>WIFI</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="custom-control custom-checkbox mb-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Foglalás</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="custom-control custom-checkbox mb-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Parkoló</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="custom-control custom-checkbox mb-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Dohányzó</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="custom-control custom-checkbox mb-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span
+                                                            class="custom-control-description">Akadálymentesített</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="custom-control custom-checkbox mb-3">
+                                                        <input type="checkbox" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Kupon</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-6">
+                                                        <label class="custom-control custom-checkbox mb-3">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                            <span
+                                                                class="custom-control-description">WIFI</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-6">
+                                                            <label class="custom-control custom-checkbox mb-3">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-indicator"></span>
+                                                                <span
+                                                                    class="custom-control-description">Dohányzó</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-6">
+                                                                <label class="custom-control custom-checkbox mb-3">
+                                                                    <input type="checkbox" class="custom-control-input">
+                                                                    <span class="custom-control-indicator"></span>
+                                                                    <span
+                                                                        class="custom-control-description">Állatbarát</span>
+                                                                </label>
+                                                            </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="listing-menu-area mt-100" id="menu">
+                                <h4>Étlap</h4>
+                                <!-- Single Listing Menu -->
+                                <div class="single-listing-menu d-flex justify-content-between">
+                                    <!-- Listing Menu Title -->
+                                    <div class="listing-menu-title">
+                                        <h6>Classic Burger</h6>
+                                        <p>Beef, salad, mustard, bacon, mayonnaise, spicey relish, cheese</p>
+                                    </div>
+                                    <!-- Listing Menu Price -->
+                                    <div class="listing-menu-price">
+                                        <h6>$9,90</h6>
+                                    </div>
+                                </div>
+                                <!-- Single Listing Menu -->
+                                <div class="single-listing-menu d-flex justify-content-between">
+                                    <!-- Listing Menu Title -->
+                                    <div class="listing-menu-title">
+                                        <h6>House Special Burger</h6>
+                                        <p>Beef, salad, mustard, bacon, mayonnaise, spicey relish, cheese</p>
+                                    </div>
+                                    <!-- Listing Menu Price -->
+                                    <div class="listing-menu-price">
+                                        <h6>$9,90</h6>
+                                    </div>
+                                </div>
+                                <!-- Single Listing Menu -->
+                                <div class="single-listing-menu d-flex justify-content-between">
+                                    <!-- Listing Menu Title -->
+                                    <div class="listing-menu-title">
+                                        <h6>Classic Burger</h6>
+                                        <p>Beef, salad, mustard, bacon, mayonnaise, spicey relish, cheese</p>
+                                    </div>
+                                    <!-- Listing Menu Price -->
+                                    <div class="listing-menu-price">
+                                        <h6>$9,90</h6>
+                                    </div>
+                                </div>
+                                <!-- Single Listing Menu -->
+                                <div class="single-listing-menu d-flex justify-content-between">
+                                    <!-- Listing Menu Title -->
+                                    <div class="listing-menu-title">
+                                        <h6>House Special Burger</h6>
+                                        <p>Beef, salad, mustard, bacon, mayonnaise, spicey relish, cheese</p>
+                                    </div>
+                                    <!-- Listing Menu Price -->
+                                    <div class="listing-menu-price">
+                                        <h6>$9,90</h6>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="listing-reviews-area mt-100" id="review">
+                                <h4>Értékelések</h4>
+                                <div class="single-review-area">
+                                    <div class="reviewer-meta d-flex align-items-center">
+
+                                        <div class="reviewer-content">
+                                            <div class="review-title-ratings d-flex justify-content-between">
+                                                <h5>Étel</h5>
+                                                <div class="ratings">
+                                                    <p class="number-rate">10/9</p>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac
+                                                nibh sed mi
+                                                ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet
+                                                vestibulum. Proin
+                                                tempus lacus porta lorem blandit aliquam eget quis ipsum.
+                                                Vivamus accumsan
+                                                consequat ligula non volutpat.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="single-review-area">
+                                    <div class="reviewer-meta d-flex align-items-center">
+
+                                        <div class="reviewer-content">
+                                            <div class="review-title-ratings d-flex justify-content-between">
+                                                <h5>Szervíz</h5>
+                                                <div class="ratings">
+                                                    <p class="number-rate">10/9</p>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac
+                                                nibh sed mi
+                                                ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet
+                                                vestibulum. Proin
+                                                tempus lacus porta lorem blandit aliquam eget quis ipsum.
+                                                Vivamus accumsan
+                                                consequat ligula non volutpat.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="single-review-area">
+                                    <div class="reviewer-meta d-flex align-items-center">
+
+                                        <div class="reviewer-content">
+                                            <div class="review-title-ratings d-flex justify-content-between">
+                                                <h5>Étterem kinézete</h5>
+                                                <div class="ratings">
+                                                    <p class="number-rate">10/9</p>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac
+                                                nibh sed mi
+                                                ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet
+                                                vestibulum. Proin
+                                                tempus lacus porta lorem blandit aliquam eget quis ipsum.
+                                                Vivamus accumsan
+                                                consequat ligula non volutpat.</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="single-review-area">
+                                    <div class="reviewer-meta d-flex align-items-center">
+
+                                        <div class="reviewer-content">
+                                            <div class="review-title-ratings d-flex justify-content-between">
+                                                <h5>Összbenyomás</h5>
+                                                <div class="ratings">
+                                                    <p class="number-rate">10/9</p>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac
+                                                nibh sed mi
+                                                ullamcorper rhoncus. Curabitur pulvinar vel augue sit amet
+                                                vestibulum. Proin
+                                                tempus lacus porta lorem blandit aliquam eget quis ipsum.
+                                                Vivamus accumsan
+                                                consequat ligula non volutpat.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="location-on-map mt-50" id="lomap">
+                                    <h4>Elhelyezkedés</h4>
+                                    <div class="location-map">
+                                        <div id="locationMap">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.233242169075!2d19.06459111581819!3d47.50484870299429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc6fb2e96d25%3A0x328925b0812fcc74!2sBudapest%2C+Sz%C3%B3fia+u.+15%2C+1068!5e0!3m2!1sen!2shu!4v1560347712112!5m2!1sen!2shu"
+                                                height="100%" width="100%" style="border: none"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span id="menualattigomb"><a href="#" class="btn dorne-btn mt-50">Tovább az
+                                        étteremhez</a></span>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+           
+            <!-- ***** Single Listing Area End ***** -->
+        </section>
+
+        <!--NAGY FEHÉR OSZLOP VÉGE-->
+    </div>
+
+
+
+
+    <!-- <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="" src="http://via.placeholder.com/300x180" alt="Card image cap">
+                        </div>
+                        <div class="card-body d-flex-column justify-content-evenly">
+                            <h4 class="card-title">Card title <a href="#">| Nemzetközi |</a></h4>
+                            <a href="#">| Magyaros |</a>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            <span class="gombtarto"><a href="" class="kartyagomb">Tovább</a></span>
+                            </p>
+                                
+                        </div>
+                    </div>
+
+                -->
+
+
+
+
+
+    </div>
+
+
+    </section>
+
+        <!-- ****** Footer Area Start ****** -->
+        <footer class="dorne-footer-area">
+            <div class="container-fluid">
+                <div class="row footer-row">
+                    <div class="col-12 col-md-4">
+                        <div class="footer-wrapper footer-wrapper-left">
+                            <h4 class="footer-title">
+                                Éttermek
+                            </h4>                    
+                            <ul class="footer-list">
+                                <li class="footer-list-item">
+                                    <a href="category-list.html" class="footer-link">Nemzetközi / Street food</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="category-list.html" class="footer-link">Modern, fine dining</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="category-list.html" class="footer-link">Magyaros éttermek</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="category-list.html" class="footer-link">Cukrászda</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block col-md-4">                    
+                        <div class="footer-img-wrapper">
+                            <img src="img/utazz-a-seffel-logo-png-03.png" alt="utazz-a-seffel-logo-png-03" class="footer-img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="footer-wrapper">
+                            <h4 class="footer-title">
+                                Elérhetőségek
+                            </h4>
+                            <ul class="footer-list footer-list-social">
+                                <li class="footer-list-item">
+                                    <a href="tel:06702446796" class="footer-link"><i class="fa fa-phone"></i>06702446796</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="mailto:utazzaseffel@gmail.com" class="footer-link"><i class="fa fa-envelope-o"></i>utazzaseffel@gmail.com</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="https://www.facebook.com/%C3%89tteremkalauz-utazz-a-s%C3%A9ffel-312768186300922/" class="footer-link"><i class="fab fa-facebook-f"></i>Étteremkalauz - Utazz a séffel</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="https://www.facebook.com/%C3%89tteremkalauz-utazz-a-s%C3%A9ffel-312768186300922/" class="footer-link"><i class="fab fa-instagram"></i>Utazz a Séffel</a>
+                                </li>
+                            </ul>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-md-flex align-items-center justify-content-center">
+                        <div class="footer-text">
+                            <p>
+                                Copyright&#169; Utazz a Séffel | A weboldal karbantartója a 
+                                <a href="https://proonline.hu/weboldal-arak " class="footer-link footer-link-small" target="_blank">Pro Online Webfejlesztő</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ****** Footer Area End ****** -->
+
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap-4 js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/others/plugins.js"></script>
+    <!-- Google Maps js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9KNSL1jTv4MY9Pza6w8DJkpI_nHyCnk"></script>
+    <script src="js/google-map/explore-map-active.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.single-listing-content').slick({
+                accessibility: true
+            });
+        });
+    </script>
+</body>
+
+</html>
